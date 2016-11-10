@@ -18,12 +18,20 @@ Before, you have to create a ``./config.js`` file following this template :
 
 ```javascript
 module.exports = {
+  // your bot token
+  // required
   token: 'app.bot.user.token',
+
+  // userIDs allowed to execute admin level commands
+  // optional, default: []
   adminIDs: [
     'adminid1',
     'adminID2',
     ...
-  ]
+  ],
+  // customize the symbol which triggers special commands
+  // optional, default: '/'
+  commandSymbol: '/'
 }
 ```
 
